@@ -1,0 +1,71 @@
+.menu-section {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.menu-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.menu-card {
+  background: #fff;
+}
+
+/* Remove special grid for large screens, use default grid-template-columns */
+
+/* Responsive Design */
+@media (min-width: 1025px) {
+  .menu-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .menu-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .menu-section {
+    padding: 20px 30px;
+  }
+
+  .menu-section h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .menu-section {
+    padding: 15px 20px;
+  }
+
+  .menu-section h1 {
+    font-size: 24px;
+  }
+} 

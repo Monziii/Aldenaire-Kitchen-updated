@@ -1,0 +1,37 @@
+{
+  "name": "aldenaire-kitchen",
+  "version": "1.0.0",
+  "description": "A modern, responsive restaurant website built with PHP and MySQL, featuring a React-inspired design and functionality.",
+  "main": "index.php",
+  "scripts": {
+    "dev": "php -S localhost:8000",
+    "build": "echo 'No build process required for PHP project'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'",
+    "format": "echo 'No formatting configured'"
+  },
+  "keywords": [
+    "restaurant",
+    "php",
+    "mysql",
+    "responsive",
+    "modern",
+    "website"
+  ],
+  "author": "Aldenaire Kitchen Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aldenaire/kitchen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aldenaire/kitchen/issues"
+  },
+  "homepage": "https://github.com/aldenaire/kitchen#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+} 
