@@ -1,0 +1,128 @@
+.menu-section {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.menu-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.menu-card {
+  background: #fff;
+}
+
+/* Remove special grid for large screens, use default grid-template-columns */
+
+/* Loading and Error States */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid orange;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 18px;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.retry-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.retry-button:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (min-width: 1025px) {
+  .menu-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .menu-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .menu-section {
+    padding: 20px 30px;
+  }
+
+  .menu-section h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .menu-section {
+    padding: 15px 20px;
+  }
+
+  .menu-section h1 {
+    font-size: 24px;
+  }
+} 

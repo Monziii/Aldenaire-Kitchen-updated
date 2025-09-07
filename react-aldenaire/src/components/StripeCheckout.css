@@ -1,0 +1,124 @@
+.stripe-checkout {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.stripe-checkout h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group .StripeElement {
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  padding: 15px;
+  background: #f8f9fa;
+  transition: border-color 0.3s ease;
+}
+
+.form-group .StripeElement--focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-group .StripeElement--invalid {
+  border-color: #dc3545;
+}
+
+.postal-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8f9fa;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.postal-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+}
+
+.payment-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cancel-btn, .pay-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-btn:hover:not(:disabled) {
+  background-color: #5a6268;
+}
+
+.pay-btn {
+  background-color: orange;
+  color: white;
+}
+
+.pay-btn:hover:not(:disabled) {
+  background-color: #e67e22;
+}
+
+.cancel-btn:disabled, .pay-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .stripe-checkout {
+    padding: 20px;
+    margin: 0 15px;
+  }
+  
+  .payment-actions {
+    flex-direction: column;
+  }
+  
+  .cancel-btn, .pay-btn {
+    width: 100%;
+  }
+} 
